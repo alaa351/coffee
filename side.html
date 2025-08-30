@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>طلب خارجي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="style.css">
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container py-5">
+  <div id="alert" class="alert alert-warning text-center" role="alert">
+    ✅ تم إرسال الطلب بنجاح! سنجهزه لك قريبًا.
+  </div>
+
+  <form class="dark-form">
+    <h3 class="mb-4 title">اطلب قهوتك الآن</h3>
+
+    <div class="mb-3">
+      <label for="name" class="form-label">الاسم الكامل</label>
+      <input type="text" class="form-control" id="name" placeholder="اكتب اسمك الكامل">
+    </div>
+
+    <div class="mb-3">
+      <label for="phone" class="form-label">رقم الهاتف</label>
+      <input type="tel" class="form-control" id="phone" placeholder="09xxxxxxxx">
+    </div>
+
+    <div class="mb-3">
+      <label for="delivery" class="form-label">طريقة الاستلام</label>
+      <select class="form-select" id="delivery">
+        <option>استلام من الفرع</option>
+        <option>توصيل للمنزل</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="address" class="form-label">العنوان (إذا توصيل)</label>
+      <input type="text" class="form-control" id="address" placeholder="الحي، الشارع، رقم المبنى">
+    </div>
+
+    <div class="mb-3">
+      <label for="order" class="form-label">اختر طلبك</label>
+      <select class="form-select" id="order">
+        <option>قهوة عربية </option>
+        <option>كابتشينو</option>
+        <option>لاتيه</option>
+        <option>موكا</option>
+        <option> كوكيز</option>
+        <option> كيك شوكولا</option>
+        <option> دونات</option>
+        <option> كرواسون زبدة</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="quantity" class="form-label">الكمية</label>
+      <input type="number" class="form-control" id="quantity" value="1">
+    </div>
+
+    <div class="mb-3">
+      <label for="time" class="form-label">وقت الاستلام (اختياري)</label>
+      <input type="time" class="form-control" id="time">
+    </div>
+
+    <div class="mb-3">
+      <label for="notes" class="form-label">ملاحظات خاصة</label>
+      <textarea class="form-control" id="notes" rows="3" placeholder="بدون سكر، زيادة الحليب..."></textarea>
+    </div>
+
+    <a href="#alert" class="btn btn-submit">إرسال الطلب</a>
+    <a href="index.html" class="btn btn-submit">رجوع</a>
+  </form>
+</div>
+
+</body>
+</html>
